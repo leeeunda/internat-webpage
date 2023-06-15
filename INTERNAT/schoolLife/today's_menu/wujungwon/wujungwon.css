@@ -1,0 +1,219 @@
+*{padding:0;margin:0}
+a:link{color:black; text-decoration: none;}
+a:visited{color:black; text-decoration: none;}
+a:hover{color:black; text-decoration: underline;}
+li{list-style: none;}
+body{
+	background-color: #FFFFFF;
+}
+.mainNavBar{
+	width : 83.34%;
+	height: 135px;
+	margin-left: 8.33%;
+	margin-right: 8.33%;
+	margin-top: 10px;
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 95px 40px;
+	grid-column-gap: 5%;
+}
+.mainNavBar li{
+	text-align: center;
+}
+.mainNavBar #logo{
+	grid-column: 3/4;
+	grid-row: 1/2;
+	font-family: Outfit;
+	font-size: 35px;
+	font-weight: 800;
+}
+.mainNavBar #logo div{
+	padding-top: 10px;
+}
+.mainNavBar #logo div span{
+	color: #9F2230;
+}
+.mainNavBar #logo a:hover{color: black; text-decoration: none;}
+.mainNavBar #loginBox{
+	grid-row: 1/2;
+	grid-column: 5/6;
+	font-family: Outfit;
+}
+.mainNavBar #loginBox #logout{
+	width: 113px;
+	height: 20px;
+	float: right;
+	margin-top: 15px;
+	background-color: #AAD9D9;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.mainNavBar .text{
+	grid-row: 2/3;
+	display: grid;
+	align-items: end;
+}
+.mainNavBar .text div{
+	background-color: #D9D9D9;
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	font-family: Outfit;
+	font-size: 20px;
+	text-align: center;
+	display: grid;
+	align-items: center;
+}
+.mainNavBar #schoolLife{
+	grid-column: 4/5;
+}
+.mainNavBar #faq{
+	grid-column: 5/6;
+}
+
+.title{
+	width: 83.34%;
+	margin-left: 8.33%;
+	margin-right: 8.33%;
+	margin-top: 20px;
+	border-top: 2px solid black;
+}
+.title  .container{
+	width: 20%;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 30px 50px;
+
+}
+.title  .container #cafeteria{
+	grid-column: 1/2;
+	grid-row: 1/3;
+	width: 60px;
+	border: 10px solid #ADD1D1;
+	border-radius: 100%;
+}
+.title  .container #text1{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	font-family: Outfit;
+	font-size: 17px;
+	text-align: center;
+}
+.title  .container #text2{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 70%;
+	color: #EFEFEF;
+	font-family: Outfit;
+	font-size: 12px;
+	border-radius: 30px;
+	background: linear-gradient(to bottom, #D9D9D9, #113A74);
+	display: grid;
+	place-items: center;
+}
+
+.menuContainer{
+	width: 83.34%;
+	margin-left: 8.33%;
+	margin-right: 8.33%;
+	height: 450px;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+	grid-template-rows: 170px 110px 170px;
+}
+.menuContainer .cafeteria{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	background: linear-gradient(to bottom, rgba(17, 58, 116, 0.5), rgba(173, 209, 209, 0));;
+	border: 2px solid rgba(17, 58, 116, 0.5);
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+.menuContainer .cafeteria .img{
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #FFFFFF;
+	display: grid;
+	place-items: center;
+}
+.menuContainer .cafeteria .img img{
+	width: 70%;
+}
+.menuContainer .cafeteria #text{
+	text-align: center;
+	font-family: Outfit;
+	font-size: 17px;
+}
+.menuContainer .modal{
+	display: none;
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.menuContainer .modal .modalbody{
+	width: 100%;
+	height: 100%;
+	background-color: #D9D9D9;
+	border-radius: 30px;
+	cursor: default;
+	overflow: auto;
+}
+.menuContainer .modal .modalbody .x{
+	width: 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+.menuContainer .modal .modalbody .menus{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	place-items: center;
+	border-bottom: 2px solid black;
+}
+.menuContainer .modal .modalbody .menus img{
+	width: 200px;
+}
+.menuContainer .modal .modalbody .menus .text{
+	font-family: Outfit;
+}
+.menuContainer #ggui{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.menuContainer #ddobagi{
+	grid-column: 3/5;
+	grid-row: 1/2;
+}
+.menuContainer #todayMenu{
+	grid-column: 6/8;
+	grid-row: 1/2;
+}
+.menuContainer #ssuong{
+	grid-column: 2/4;
+	grid-row: 3/4;
+}
+.menuContainer #sam{
+	grid-column: 5/7;
+	grid-row: 3/4;
+}
+.menuContainer #fight{
+	grid-column: 8/9;
+	grid-row: 3/4;
+}

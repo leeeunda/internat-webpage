@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="schoolLife.css">
+	<title>schoolLife</title>
+</head>
+<body>
+	<ul class="mainNavBar">
+		<li id="logo"><a href="../INTERNAT_login.html"><div>INTER<span>NAT</span></div></a></li>
+		<li id="loginBox">
+			<a href="../INTERNAT_unlogin.html"><div id="logout">LOG OUT</div></a>
+		</li>
+		<li class="text"><a href="../information/information.html"><div>Information</div></a></li>
+		<li class="text"><a href="../community/community.html"><div>Community</div></a></li>
+		<li class="text" id="schoolLife"><a href="schoolLife.html"><div>School Life</div></a></li>
+		<li class="text" id="faq"><a href="../faq/faq.html"><div>FAQ</div></a></li>
+	</ul>
+	<div class="textTop">
+		<img src="arrow.png" width="30px">
+		<div id="textCtrl">&nbspClick On The Banner To Go To The Corresponding</div>
+	</div>
+	<ul class="mainContent">
+		<div class="component" id="todayMenu">
+			<div id="todayMenuImg"></div>
+		</div>
+		<div id="todayMenuScript">Today's Menu</div>
+		<div id="todayMenuModal">
+			<div id="modalBody">
+				<a href="./today's_menu/student_hall/student_hall.html"><div id="studentHall" class="meal">Student Hall</div></a>
+				<a href="./today's_menu/second_dorm/second_dorm.html"><div id="secondDorm" class="meal">The Second Dormitory</div></a>
+				<a href="./today's_menu/wujungwon/wujungwon.html"><div id="wujung" class="meal">Wujungwon(dormitory)</div></a>
+			</div>
+		</div>
+		<a href="./bus/bus.html" class="component" id="schoolBus">
+			<div id="schoolBusImg"></div>
+		</a>
+		<div id="schoolBusScript">School Bus Guidance</div>
+		<a href="https://www.khu.ac.kr/kor/sub/tab.do?MENU_SEQ=278" class="component" id="map">
+			<div id="mapImg"></div></a>
+		<div id="mapScript">Map</div>
+	</ul>
+	<script src="schoolLife.js"></script>
+</body>
+</html>
